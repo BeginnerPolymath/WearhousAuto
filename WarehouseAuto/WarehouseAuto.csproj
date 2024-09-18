@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\OpenCvSharp4.runtime.win.4.10.0.20240616\build\netstandard\OpenCvSharp4.runtime.win.props" Condition="Exists('..\packages\OpenCvSharp4.runtime.win.4.10.0.20240616\build\netstandard\OpenCvSharp4.runtime.win.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1D63A7B-7578-4B5B-823D-095C5F73ED09}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WarehouseAuto</RootNamespace>
+    <AssemblyName>WarehouseAuto</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp4.4.10.0.20240616\lib\netstandard2.0\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp4.Extensions.4.10.0.20240616\lib\netstandard2.0\OpenCvSharp.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.8.0.7\lib\net462\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsInput, Version=1.0.4.0, Culture=neutral, PublicKeyToken=9b287f7dc5073cad, processorArchitecture=MSIL">
+      <HintPath>..\packages\InputSimulator.1.0.4.0\lib\net20\WindowsInput.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CircleMacrosMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CircleMacrosMenu.Designer.cs">
+      <DependentUpon>CircleMacrosMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Number.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Number.Designer.cs">
+      <DependentUpon>Number.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageFinder.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Script\Hooks.cs" />
+    <Compile Include="Script\KeyboardHook.cs" />
+    <Compile Include="Script\LanguageSwitcher.cs" />
+    <Compile Include="Script\Macroses.cs" />
+    <Compile Include="Script\MacrosSystem.cs" />
+    <Compile Include="Script\SaveManager.cs" />
+    <Compile Include="Script\STATask.cs" />
+    <Compile Include="Script\WindowController.cs" />
+    <Compile Include="StandartMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandartMode.Designer.cs">
+      <DependentUpon>StandartMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextPanel.Designer.cs">
+      <DependentUpon>TextPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForPixelColor.cs" />
+    <EmbeddedResource Include="CircleMacrosMenu.resx">
+      <DependentUpon>CircleMacrosMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Number.resx">
+      <DependentUpon>Number.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StandartMode.resx">
+      <DependentUpon>StandartMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextPanel.resx">
+      <DependentUpon>TextPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".nuget\mouse-keyboard-hook-logo.png" />
+    <None Include="Resources\DeliveryWindow.png" />
+    <None Include="Resources\Checkkek.png" />
+    <None Include="Resources\NewButtonCheck2.png" />
+    <None Include="Resources\NewEdningButton.png" />
+    <None Include="Resources\NewButtonCheck.png" />
+    <None Include="Resources\DliveryBarcodeEnter.png" />
+    <None Include="Resources\1CStartWindow.png" />
+    <None Include="Resources\RDPPassword.png" />
+    <None Include="Resources\OnBase.png" />
+    <None Include="Resources\GMTChoiceButton.png" />
+    <None Include="Resources\RasConsCheck.png" />
+    <None Include="Resources\MarkWindow.png" />
+    <None Include="Resources\CreateGMTWindow.png" />
+    <None Include="Resources\MOWButtonInGMT.png" />
+    <None Include="Resources\Package55-105.png" />
+    <None Include="Resources\Package100-120.png" />
+    <None Include="Resources\DelivySpeedWindow.png" />
+    <None Include="Resources\SlowButton.png" />
+    <None Include="Resources\VeryfastButton.png" />
+    <None Include="Resources\FastButton.png" />
+    <None Include="Resources\Package80-120.png" />
+    <None Include="Resources\SelectPackageWindow.png" />
+    <None Include="Resources\PPKButton.png" />
+    <None Include="Resources\UUSButton.png" />
+    <None Include="Resources\KHVButton.png" />
+    <None Include="Resources\MOWButton.png" />
+    <None Include="Resources\GMTWindow.png" />
+    <None Include="Resources\CreatePackageButton.png" />
+    <None Include="Resources\CreateConsolidationButton.png" />
+    <None Include="Resources\EnterBarcodeButton.png" />
+    <None Include="Resources\CreateConsolidationWindow.png" />
+    <None Include="Resources\TransferEnter.png" />
+    <None Include="Resources\SendModeEnter.png" />
+    <None Include="Resources\GiverEnter.png" />
+    <None Include="Resources\NumberAuto.png" />
+    <None Include="Resources\NumberAutoTransfer.png" />
+    <None Include="Resources\SendingConsolidationButton.png" />
+    <None Include="Resources\EndingConsolidationButton.png" />
+    <None Include="Resources\SendingWindow.png" />
+    <None Include="Resources\EdningButton.png" />
+    <None Include="Resources\EndingConsolidation.png" />
+    <None Include="Resources\EnterInvoiceDot.png" />
+    <None Include="Resources\EnterInvoceWindow.png" />
+    <None Include="Resources\SelectOjbectTypeWindow.png" />
+    <None Include="Resources\NumberForSecth.png" />
+    <None Include="Resources\GMXSearch.png" />
+    <None Include="Resources\SaveButton.png" />
+    <None Include="Resources\RaskonsWindow.png" />
+    <None Include="Resources\EnterInvoice.png" />
+    <None Include="Resources\CloseButton.png" />
+    <None Include="Resources\EnterConsolidation.png" />
+    <None Include="Resources\MarkButtonPress.png" />
+    <None Include="Resources\InvoiceAdd.png" />
+    <None Include="Resources\MarkButton.png" />
+    <None Include="Resources\SearchGM.png" />
+    <None Include="Resources\SearchByNumber.png" />
+    <None Include="Resources\SearchF4-F5.png" />
+    <None Include="Resources\Prihod.png" />
+    <None Include="Resources\Consolidation.png" />
+    <None Include="Resources\SmaovivozWindow.png" />
+    <None Include="Resources\Screenshot 2024-07-13 150043.png" />
+    <None Include="Resources\InvoiceListWindow.png" />
+    <None Include="Resources\Spisanie.png" />
+    <None Include="Resources\InvoiceListInactive.png" />
+    <None Include="Resources\InvoiceList.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\operation.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\OpenCvSharp4.runtime.win.4.10.0.20240616\build\netstandard\OpenCvSharp4.runtime.win.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCvSharp4.runtime.win.4.10.0.20240616\build\netstandard\OpenCvSharp4.runtime.win.props'))" />
+  </Target>
+</Project>
