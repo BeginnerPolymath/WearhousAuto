@@ -24,6 +24,30 @@ namespace WarehouseAuto.Script
             KeyboardHook.Hooks = this;
         }
 
+        MaskedTextBox msk;
+
+        public void WritePassword()
+        {
+            popup = new Form();
+
+            popup.Size = new System.Drawing.Size(200, 200);
+
+            msk = new MaskedTextBox() { Text = "", Left = 10, Top = 10 };
+
+            popup.Controls.Add(msk);
+
+            msk.TextChanged += UpdatePassword;
+
+            popup.TopMost = true;
+            popup.Show();
+        }
+
+        void UpdatePassword(object sender, EventArgs e)
+        {
+            StandartMode.ProgramInfo.Password = msk.Text;
+            StandartMode.SaveData();
+        }
+
         // Нестатический метод для обработки нажатия F12
         public void AutoEnterRDP()
         {
@@ -35,18 +59,10 @@ namespace WarehouseAuto.Script
             {
                 ImageFinder.ClickButton(Resources.RDPPassword);
 
-                SendWaitDelay("{1}", 1, 50);
-                SendWaitDelay("{2}", 1, 50);
-                SendWaitDelay("{3}", 1, 50);
-                SendWaitDelay("{4}", 1, 50);
-                SendWaitDelay("{5}", 1, 50);
-
-                SendWaitDelay("{Q}", 1, 50);
-                SendWaitDelay("{w}", 1, 50);
-                SendWaitDelay("{e}", 1, 50);
-                SendWaitDelay("{r}", 1, 50);
-                SendWaitDelay("{t}", 1, 50);
-                SendWaitDelay("{y}", 1, 50);
+                foreach (var _char in StandartMode.ProgramInfo.Password)
+                {
+                    SendWaitDelay("{" + $"{_char}" + "}", 1, 50);
+                }
 
                 SendWaitDelay("{Enter}", 1, 50);
 

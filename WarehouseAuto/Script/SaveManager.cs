@@ -12,8 +12,7 @@ namespace WarehouseAuto.Script
     internal class SaveManager
     {
 
-
-        public static void SaveDataToFile(ref List<Data> datas, ref ProgramInfo programInfo)
+        public static void SaveDataToFile(string savePath, ref List<Data> datas, ref ProgramInfo programInfo)
         {
             string timestamp = DateTime.Now.ToString("dd.MM.yyyy");
             string fileName = $"{timestamp}.json";
@@ -23,19 +22,19 @@ namespace WarehouseAuto.Script
             string json2 = JsonConvert.SerializeObject(programInfo, Newtonsoft.Json.Formatting.Indented);
 
             // Сохраняем файл
-            File.WriteAllText("C:/Users/User/Desktop/Saves/" + fileName, json);
-            File.WriteAllText("C:/Users/User/Desktop/Saves/programInfo.json", json2);
+            File.WriteAllText(savePath + "/" + fileName, json);
+            File.WriteAllText(savePath + "/" + "programInfo.json", json2);
         }
 
-        public static void LoadDataFromFile(ref List<Data> data, ref ProgramInfo programInfo)
+        public static void LoadDataFromFile(string savePath, ref List<Data> data, ref ProgramInfo programInfo)
         {
             string timestamp = DateTime.Now.ToString("dd.MM.yyyy");
             string fileName = $"{timestamp}.json";
 
-            if (File.Exists("C:/Users/User/Desktop/Saves/programInfo.json"))
+            if (File.Exists(savePath + "/programInfo.json"))
             {
                 // Читаем JSON из файла
-                string json = File.ReadAllText("C:/Users/User/Desktop/Saves/programInfo.json");
+                string json = File.ReadAllText(savePath + "/programInfo.json");
 
                 // Десериализуем JSON в объект класса Data
                 programInfo = JsonConvert.DeserializeObject<ProgramInfo>(json);
@@ -45,10 +44,10 @@ namespace WarehouseAuto.Script
                 programInfo = new ProgramInfo();
             }
 
-            if (File.Exists("C:/Users/User/Desktop/Saves/" + fileName))
+            if (File.Exists(savePath + "/" + fileName))
             {
                 // Читаем JSON из файла
-                string json = File.ReadAllText("C:/Users/User/Desktop/Saves/" + fileName);
+                string json = File.ReadAllText(savePath + "/" + fileName);
 
                 // Десериализуем JSON в объект класса Data
                 data = JsonConvert.DeserializeObject<List<Data>>(json);

@@ -103,15 +103,21 @@ namespace WarehouseAuto
         public KeyboardHook KeyboardHook;
         public Hooks Hooks;
 
+        public string SavePath;
+
         //ФУНКЦИИ
 
         public StandartMode()
         {
-            InitializeComponent();
-            SerialPortProgram();
+            
 
-            //KeyboardHook KeyboardHook = new KeyboardHook();
-            //Hooks Hooks = new Hooks();
+            SavePath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            Console.WriteLine(SavePath);
+
+            
+
+            KeyboardHook KeyboardHook = new KeyboardHook();
+            Hooks Hooks = new Hooks();
 
             //keyboardHook.Init(this, Hooks);
             //Hooks.Init(keyboardHook, this);
@@ -120,9 +126,29 @@ namespace WarehouseAuto
 
             SetTimer();
 
-            //SaveManager.LoadDataFromFile(ref Datas, ref ProgramInfo);
+            SaveManager.LoadDataFromFile(SavePath, ref Datas, ref ProgramInfo);
 
-            //// SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+            SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
+
+            InitializeComponent();
+
+            if (ProgramInfo.COMPort == "" || ProgramInfo.COMPort == string.Empty)
+            {
+                ProgramInfo.COMPort = "COM3";
+            }
+
+            port = new SerialPort(ProgramInfo.COMPort, 9600, Parity.None, 8, StopBits.One);
+
+            comText.Text = ProgramInfo.COMPort;
+
+            SerialPortProgram();
+
+            
+        }
+
+        public void SaveData()
+        {
+            SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
         }
 
         private void StandartMode_Load(object sender, EventArgs e)
@@ -147,6 +173,10 @@ namespace WarehouseAuto
             port = new SerialPort(comText.Text, 9600, Parity.None, 8, StopBits.One);
 
             SerialPortProgram();
+
+            ProgramInfo.COMPort = comText.Text;
+
+            SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
         }
 
         private void SerialPortProgram()
@@ -249,7 +279,7 @@ namespace WarehouseAuto
 
             TextCountUpdate2();
 
-            // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+            SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
         }
 
         [STAThread]
@@ -264,7 +294,7 @@ namespace WarehouseAuto
                 Paste(text.Remove(text.Length - 1, 1));
 
                 HistroyAdd(text.Remove(text.Length - 1, 1));
-                // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+                SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
             });
         }
 
@@ -442,7 +472,7 @@ namespace WarehouseAuto
 
                 HistroyFirstAdd();
                 LastInvoceRemove();
-                // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+                SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
 
                 Thread.Sleep(1000);
 
@@ -485,7 +515,7 @@ namespace WarehouseAuto
 
                 HistroyFirstAdd();
                 //LastInvoceRemove();
-                // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+                SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
 
                 search = true;
 
@@ -501,7 +531,7 @@ namespace WarehouseAuto
 
                 HistroyFirstAdd();
                 LastInvoceRemove();
-                // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+                SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
 
                 Thread.Sleep(400);
 
@@ -532,7 +562,7 @@ namespace WarehouseAuto
 
                 HistroyFirstAdd();
                 LastInvoceRemove();
-                // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+                SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
 
                 Thread.Sleep(700);
 
@@ -564,7 +594,7 @@ namespace WarehouseAuto
 
                 HistroyFirstAdd();
                 LastInvoceRemove();
-                // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+                SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
 
                 ImageFinder.UnFindCount(40, 100, Resources.EnterInvoiceDot);
             }
@@ -582,7 +612,7 @@ namespace WarehouseAuto
 
                 HistroyFirstAdd();
                 LastInvoceRemove();
-                // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+                SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
 
                 Thread.Sleep(500);
 
@@ -614,11 +644,49 @@ namespace WarehouseAuto
             {
                 ImageFinder.ClickButton(Resources.EnterInvoice);
 
+                Paste(EnterInvoice.Items[EnterInvoice.Items.Count - 1].ToString(), 300);
+
+                HistroyFirstAdd();
+                LastInvoceRemove();
+                SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
+
+                //if (ImageFinder.UnFindCount(30, 100, Resources.EnterInvoice))
+                //{
+                //    MessageBox.Show("aha");
+                //}
+
+                Thread.Sleep(200);
+
+                SendKeys.SendWait("+{Tab}");
+
+                Paste("123", enter: false);
+
+                if (ImageFinder.FindCount(30, 100, Resources.Checkkek))
+                {
+                    SendKeys.SendWait("^{Backspace}");
+
+                    Thread.Sleep(200);
+
+                    if (ImageFinder.FindCount(30, 100, Resources.EnterInvoice))
+                    {
+                        search = false;
+
+                        return;
+                    }
+                }
+
+                search = true;
+
+                return;
+
+
+                ImageFinder.ClickButton(Resources.EnterInvoice);
+
                 Paste(EnterInvoice.Items[EnterInvoice.Items.Count - 1].ToString());
 
                 HistroyFirstAdd();
                 LastInvoceRemove();
-                // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+                SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
 
                 Thread.Sleep(300);
 
@@ -683,7 +751,7 @@ namespace WarehouseAuto
 
                 HistroyFirstAdd();
                 LastInvoceRemove();
-                // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+                SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
 
                 search = true;
 
@@ -741,7 +809,7 @@ namespace WarehouseAuto
 
             HistroyFirstAdd();
             LastInvoceRemove();
-            // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+            SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
 
             WaitForPixelColor.PollPixel(new Point(1364, 9), Color.FromArgb(255, 158, 158, 158), ref AutoAddPause);
         }
@@ -918,7 +986,7 @@ namespace WarehouseAuto
 
                     TextCountUpdate2();
 
-                    // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+                    SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
                 }
             }
 
@@ -1069,7 +1137,7 @@ namespace WarehouseAuto
                     }
                 }
 
-                // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+                SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
             }
         }
 
@@ -1254,7 +1322,15 @@ namespace WarehouseAuto
                 //Кликаем на поле получателя
                 ImageFinder.ClickButton(Resources.GiverEnter);
 
-                Paste(giver, 1000);
+                //Paste(giver, 1000);
+
+                SendKeys.SendWait("{F4}");
+
+                if (ImageFinder.FindCount(10, 30, Resources.GiverEnter))
+                { 
+                
+                }
+
 
                 Thread.Sleep(500);
 
@@ -1489,14 +1565,14 @@ namespace WarehouseAuto
         {
             Datas[ContainerID].GMTNumber = GTMField.Text;
 
-            // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+            SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
         }
 
         private void SealField_TextChanged(object sender, EventArgs e)
         {
             Datas[ContainerID].SealNumber = SealField.Text;
 
-            // SaveManager.SaveDataToFile(ref Datas, ref ProgramInfo);
+            SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
         }
 
 
@@ -1537,17 +1613,10 @@ namespace WarehouseAuto
             }
         }
 
+        private void comText_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
 
-
-
-
-
-
-
-
-        
-
-        
+        }
     }
 
     

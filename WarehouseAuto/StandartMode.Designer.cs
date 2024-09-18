@@ -295,6 +295,7 @@
             this.comText.Size = new System.Drawing.Size(43, 20);
             this.comText.TabIndex = 4;
             this.comText.Text = "COM3";
+            this.comText.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.comText_MaskInputRejected);
             // 
             // StateText
             // 

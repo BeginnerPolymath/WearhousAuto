@@ -21,6 +21,7 @@ namespace WarehouseAuto.Script
         private const int WM_KEYDOWN = 0x0100;
         private const Keys F12 = Keys.F12;
         private const Keys F11 = Keys.F11;
+        private const Keys F1 = Keys.F1;
 
 
         private LowLevelMouseProc _mouseProc;
@@ -110,6 +111,10 @@ namespace WarehouseAuto.Script
                 else if((Keys)vkCode == F11)
                 {
                     Hooks.AutoEnterRDP();
+                }
+                else if ((Keys)vkCode == F1)
+                {
+                    Hooks.WritePassword();
                 }
             }
             return CallNextHookEx(_keyboardHookID, nCode, wParam, lParam);
