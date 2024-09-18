@@ -1,0 +1,243 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|c:\\users\\user\\documents\\github\\wearhousauto\\warehouseauto\\standartmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\standartmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WarehouseAuto||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\standartmode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\standartmode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\hooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\hooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\macroses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\macroses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\imagefinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\imagefinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\languageswitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\languageswitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\keyboardhook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\keyboardhook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\statask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\statask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\macrossystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\macrossystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\standartmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\standartmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\windowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\windowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\waitforpixelcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\waitforpixelcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Hooks.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\Hooks.cs",
+              "RelativeDocumentMoniker": "WarehouseAuto\\Script\\Hooks.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\Hooks.cs",
+              "RelativeToolTip": "WarehouseAuto\\Script\\Hooks.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T02:20:24.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Macroses.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\Macroses.cs",
+              "RelativeDocumentMoniker": "WarehouseAuto\\Script\\Macroses.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\Macroses.cs",
+              "RelativeToolTip": "WarehouseAuto\\Script\\Macroses.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T02:12:42.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ImageFinder.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\ImageFinder.cs",
+              "RelativeDocumentMoniker": "WarehouseAuto\\ImageFinder.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\ImageFinder.cs",
+              "RelativeToolTip": "WarehouseAuto\\ImageFinder.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAewFEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T00:59:27.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LanguageSwitcher.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\LanguageSwitcher.cs",
+              "RelativeDocumentMoniker": "WarehouseAuto\\Script\\LanguageSwitcher.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\LanguageSwitcher.cs",
+              "RelativeToolTip": "WarehouseAuto\\Script\\LanguageSwitcher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T00:46:38.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WindowController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\WindowController.cs",
+              "RelativeDocumentMoniker": "WarehouseAuto\\Script\\WindowController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\WindowController.cs",
+              "RelativeToolTip": "WarehouseAuto\\Script\\WindowController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T00:42:32.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StandartMode.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\StandartMode.cs",
+              "RelativeDocumentMoniker": "WarehouseAuto\\StandartMode.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\StandartMode.cs [Design]",
+              "RelativeToolTip": "WarehouseAuto\\StandartMode.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T23:39:09.787Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StandartMode.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\StandartMode.cs",
+              "RelativeDocumentMoniker": "WarehouseAuto\\StandartMode.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\StandartMode.cs",
+              "RelativeToolTip": "WarehouseAuto\\StandartMode.cs",
+              "ViewState": "AgIAAFMCAAAAAAAAAAAAAGwCAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T23:39:15.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SaveManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\SaveManager.cs",
+              "RelativeDocumentMoniker": "WarehouseAuto\\Script\\SaveManager.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\SaveManager.cs",
+              "RelativeToolTip": "WarehouseAuto\\Script\\SaveManager.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAgwHAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T00:24:45.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MacrosSystem.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\MacrosSystem.cs",
+              "RelativeDocumentMoniker": "WarehouseAuto\\Script\\MacrosSystem.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\MacrosSystem.cs",
+              "RelativeToolTip": "WarehouseAuto\\Script\\MacrosSystem.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwEcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T00:33:25.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "STATask.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\STATask.cs",
+              "RelativeDocumentMoniker": "WarehouseAuto\\Script\\STATask.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\STATask.cs",
+              "RelativeToolTip": "WarehouseAuto\\Script\\STATask.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T00:09:24.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "KeyboardHook.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\KeyboardHook.cs",
+              "RelativeDocumentMoniker": "WarehouseAuto\\Script\\KeyboardHook.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\KeyboardHook.cs",
+              "RelativeToolTip": "WarehouseAuto\\Script\\KeyboardHook.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAmwG8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T00:08:14.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StandartMode.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\StandartMode.Designer.cs",
+              "RelativeDocumentMoniker": "WarehouseAuto\\StandartMode.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\StandartMode.Designer.cs",
+              "RelativeToolTip": "WarehouseAuto\\StandartMode.Designer.cs",
+              "ViewState": "AQIAAK4BAAAAAAAAAAAAALUBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T00:06:24.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WarehouseAuto",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\WarehouseAuto.csproj",
+              "RelativeDocumentMoniker": "WarehouseAuto\\WarehouseAuto.csproj",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\WarehouseAuto.csproj",
+              "RelativeToolTip": "WarehouseAuto\\WarehouseAuto.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-12T00:41:48.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WaitForPixelColor.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\WaitForPixelColor.cs",
+              "RelativeDocumentMoniker": "WarehouseAuto\\WaitForPixelColor.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\WaitForPixelColor.cs",
+              "RelativeToolTip": "WarehouseAuto\\WaitForPixelColor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T01:07:02.627Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
