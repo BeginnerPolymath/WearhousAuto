@@ -114,13 +114,15 @@ namespace WarehouseAuto
             SavePath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             Console.WriteLine(SavePath);
 
-            
-
             KeyboardHook KeyboardHook = new KeyboardHook();
             Hooks Hooks = new Hooks();
 
             keyboardHook.Init(this, Hooks);
             Hooks.Init(keyboardHook, this);
+
+            //System.Windows.Forms.Application.Run();
+
+
 
             TopMost = true;
 
@@ -142,8 +144,6 @@ namespace WarehouseAuto
             comText.Text = ProgramInfo.COMPort;
 
             SerialPortProgram();
-
-            
         }
 
         public void SaveData()
@@ -1004,7 +1004,7 @@ namespace WarehouseAuto
                 TextCountUpdate2();
             }
 
-            if (e.KeyCode.ToString() == "Delete" || e.KeyCode.ToString() == "Backspace")
+            if (e.KeyCode.ToString() == "Delete" || e.KeyCode.ToString() == Keys.Back.ToString())
             {
                 ListBox.SelectedObjectCollection selectedItems = new ListBox.SelectedObjectCollection(EnterInvoice);
                 selectedItems = EnterInvoice.SelectedItems;
@@ -1013,7 +1013,9 @@ namespace WarehouseAuto
                 {
                     for (int i = selectedItems.Count - 1; i >= 0; i--)
                     {
-                        Datas[ContainerID].EnterInvoices.Remove(new ScanInfo(GetTimeNow(), selectedItems[i].ToString()));
+                        //Datas[ContainerID].EnterInvoices.Remove(new ScanInfo(GetTimeNow(), selectedItems[i].ToString()));
+                        Datas[ContainerID].EnterInvoices.RemoveAt(i);
+
                         EnterInvoice.Items.Remove(selectedItems[i]);
                     }
 
@@ -1167,8 +1169,11 @@ namespace WarehouseAuto
                     for (int i = selectedItems.Count - 1; i >= 0; i--)
                     {
                         list.Items.Remove(selectedItems[i]);
+                        //scanInfos.RemoveAt(i);
                     }
                 }
+
+
 
                 SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
             }
@@ -1234,59 +1239,59 @@ namespace WarehouseAuto
         {
             if (ContainerName == "Москва местами")
             {
-                CreateCons("495-0129507", "АЭРОФЛОТ=ПОСТАВЩИК СПб", "Авиа", "Владивосток", "");
+                CreateCons("Курьер-Регион (Москва)", "АЭРОФЛОТ=ПОСТАВЩИК СПб", "Авиа", "Владивосток", "");
             }
             else if (ContainerName == "Москва ЕЛИ местами")
             {
-                CreateCons("495-0129507", "АЭРОФЛОТ=ПОСТАВЩИК СПб", "Авиа", "Владивосток", "", "Литий");
+                CreateCons("Курьер-Регион (Москва)", "АЭРОФЛОТ=ПОСТАВЩИК СПб", "Авиа", "Владивосток", "", "Литий");
             }
             else if (ContainerName == "БИО")
             {
-                CreateCons("495-0129507", "Авиа-Карго Логистик новый(Владивосток)", "Авиа", "Владивосток", "");
+                CreateCons("Курьер-Регион (Москва)", "Авиа-Карго Логистик новый(Владивосток)", "Авиа", "Владивосток", "");
             }
 
             else if (ContainerName == "Хабаровск местами")
             {
-                CreateCons("495-0094688", "АЭРО-ГРУЗ (Владивосток)", "Авиа", "Владивосток", "");
+                CreateCons("КС Хабаровск", "АЭРО-ГРУЗ (Владивосток)", "Авиа", "Владивосток", "");
             }
             else if (ContainerName == "Южный местами")
             {
-                CreateCons("495-0029587", "АЭРО-ГРУЗ (Владивосток)", "Авиа", "Владивосток", "");
+                CreateCons("КС Южно-Сахалинск", "АЭРО-ГРУЗ (Владивосток)", "Авиа", "Владивосток", "");
             }
             else if (ContainerName == "Камчатка местами")
             {
-                CreateCons("495-0027635", "АЭРО-ГРУЗ (Владивосток)", "Авиа", "Владивосток", "");
+                CreateCons("КС Петропавловск-Камчатский", "АЭРО-ГРУЗ (Владивосток)", "Авиа", "Владивосток", "");
             }
 
-            else if (ContainerName == "Артем местами")
+            else if (ContainerName == "Артем места")
             {
-                CreateCons("495-", "КС Владивосток", "Авто", "Владивосток", "");
+                CreateCons("КС Артем", "КС Владивосток", "Авто", "Владивосток", "");
             }
 
             else if (ContainerName == "Флагман")
             {
-                CreateCons("495-", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
+                CreateCons("КС Хабаровск", "Флагман-Амур", "Авто", "Владивосток", "");
             }
 
             else if (ContainerName == "Арсеньев")
             {
-                CreateCons("495-", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
+                CreateCons("Раков Игорь", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
             }
             else if (ContainerName == "Спасск")
             {
-                CreateCons("495-", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
+                CreateCons("Герасимов Геннадий", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
             }
             else if (ContainerName == "Лесозаводск")
             {
-                CreateCons("495-", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
+                CreateCons("Маргач", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
             }
             else if (ContainerName == "Дальнереченск")
             {
-                CreateCons("495-", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
+                CreateCons("Синяйкин", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
             }
             else if (ContainerName == "Дальнегорск")
             {
-                CreateCons("495-", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
+                CreateCons("Кошуков", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
             }
         }
 
@@ -1345,6 +1350,8 @@ namespace WarehouseAuto
 
         void CreateCons(string giver, string transporter, string mode, string point, string point2, string comment = "")
         {
+            LanguageSwitcher.SetEnglish();
+
             //Нажимаем на кнопку создания консолидации
             ImageFinder.ClickButton(Resources.CreateConsolidationButton);
 
@@ -1355,27 +1362,39 @@ namespace WarehouseAuto
                 //Кликаем на поле получателя
                 ImageFinder.ClickButton(Resources.GiverEnter);
 
-                //Paste(giver, 1000);
+                Thread.Sleep(500);
 
                 SendKeys.SendWait("{F4}");
 
-                if (ImageFinder.FindCount(10, 30, Resources.GiverEnter))
-                { 
-                
+                if (ImageFinder.FindCount(10, 100, Resources.Kontragents))
+                {
+                    SendKeys.SendWait("{Tab 3}");
+
+                    Thread.Sleep(500);
+
+                    SendKeys.SendWait("^f");
+
+                    Thread.Sleep(1000);
+
+                    Paste(giver, 500);
+
+                    Thread.Sleep(1000);
+
+                    SendKeys.SendWait("{Enter}");
                 }
 
 
                 Thread.Sleep(500);
 
-                SendKeys.SendWait("{Tab 4}");
+                SendKeys.SendWait("{Tab 1}");
 
                 Thread.Sleep(500);
 
-                Paste(transporter);
+                Paste(transporter, 500);
 
-                Thread.Sleep(500);
+                Thread.Sleep(1000);
 
-                SendKeys.SendWait("{Tab}");
+                SendKeys.SendWait("{Tab 2}");
 
                 Paste(mode);
 
@@ -1453,7 +1472,7 @@ namespace WarehouseAuto
             //Открываем окно выбора направления
             ImageFinder.ClickButton(Resources.CreatePackageButton);
 
-            if (ImageFinder.FindCount(5, 100, Resources.GMTWindow))
+            if (ImageFinder.FindCount(10, 200, Resources.GMTWindow))
             {
                 Thread.Sleep(200);
 

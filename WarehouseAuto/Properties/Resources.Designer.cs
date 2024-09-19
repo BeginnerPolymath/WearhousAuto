@@ -383,6 +383,16 @@ namespace WarehouseAuto.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Kontragents {
+            get {
+                object obj = ResourceManager.GetObject("Kontragents", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MarkButton {
             get {
                 object obj = ResourceManager.GetObject("MarkButton", resourceCulture);

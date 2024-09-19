@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -18,7 +19,9 @@ namespace WarehouseAuto.Script
 
         public static void Fouce1C(object sender, EventArgs e)
         {
+
             IntPtr hWnd = WindowController.FindWindow("TscShellContainerClass", null);
+
             WindowController.ShowWindow(hWnd, 9);
             WindowController.SetForegroundWindow(hWnd);
 

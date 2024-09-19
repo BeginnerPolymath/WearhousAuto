@@ -4,14 +4,18 @@ using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Winook;
 
 namespace WarehouseAuto.Script
 {
     public class KeyboardHook
     {
         public Hooks Hooks;
+
+        public Thread _mainThread;
 
         private const int WH_MOUSE_LL = 14;
         private const int WH_KEYBOARD_LL = 13;
@@ -33,13 +37,29 @@ namespace WarehouseAuto.Script
 
         public void Init(StandartMode standartMode, Hooks hooks)
         {
-            _mouseProc = MouseHookCallback;
             _keyboardProc = KeyboardHookCallback;
-            _mouseHookID = SetMouseHook(_mouseProc);
             _keyboardHookID = SetKeyboardHook(_keyboardProc);
+
+            _mouseProc = MouseHookCallback;
+            _mouseHookID = SetMouseHook(_mouseProc);
+
+            //_mainThread = new Thread(new ThreadStart(MainLoop));
+            //_mainThread.Start();
 
             StandartMode = standartMode;
             Hooks = hooks;
+        }
+
+        public void MainLoop()
+        {
+            Initialize();
+            Application.Run();
+        }
+
+        public void Initialize()
+        {
+            _mouseProc = MouseHookCallback;
+            _mouseHookID = SetMouseHook(_mouseProc);
         }
 
         public void Unhook()

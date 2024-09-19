@@ -36,3 +36,10 @@ C:\Users\User\Documents\GitHub\WearhousAuto\WarehouseAuto\obj\x64\Debug\Warehous
 C:\Users\User\Documents\GitHub\WearhousAuto\WarehouseAuto\obj\x64\Debug\Warehous.5E62A154.Up2Date
 C:\Users\User\Documents\GitHub\WearhousAuto\WarehouseAuto\obj\x64\Debug\WarehouseAuto.exe
 C:\Users\User\Documents\GitHub\WearhousAuto\WarehouseAuto\obj\x64\Debug\WarehouseAuto.pdb
+C:\Users\User\Documents\GitHub\WearhousAuto\WarehouseAuto\bin\x64\Debug\winook.support\Winook.Lib.Host.x64.exe
+C:\Users\User\Documents\GitHub\WearhousAuto\WarehouseAuto\bin\x64\Debug\winook.support\Winook.Lib.Host.x86.exe
+C:\Users\User\Documents\GitHub\WearhousAuto\WarehouseAuto\bin\x64\Debug\winook.support\Winook.Lib.Keyboard.x64.dll
+C:\Users\User\Documents\GitHub\WearhousAuto\WarehouseAuto\bin\x64\Debug\winook.support\Winook.Lib.Keyboard.x86.dll
+C:\Users\User\Documents\GitHub\WearhousAuto\WarehouseAuto\bin\x64\Debug\winook.support\Winook.Lib.Mouse.x64.dll
+C:\Users\User\Documents\GitHub\WearhousAuto\WarehouseAuto\bin\x64\Debug\winook.support\Winook.Lib.Mouse.x86.dll
+C:\Users\User\Documents\GitHub\WearhousAuto\WarehouseAuto\bin\x64\Debug\Winook.dll
