@@ -42,22 +42,19 @@ namespace WarehouseAuto.Script
             Hooks = hooks;
         }
 
-        public async void Unhook()
+        public void Unhook()
         {
-            await Task.Run(() =>
+            if (_mouseHookID != IntPtr.Zero)
             {
-                if (_mouseHookID != IntPtr.Zero)
-                {
-                    UnhookWindowsHookEx(_mouseHookID);
-                    _mouseHookID = IntPtr.Zero;
-                }
+                UnhookWindowsHookEx(_mouseHookID);
+                _mouseHookID = IntPtr.Zero;
+            }
 
-                if (_keyboardHookID != IntPtr.Zero)
-                {
-                    UnhookWindowsHookEx(_keyboardHookID);
-                    _keyboardHookID = IntPtr.Zero;
-                }
-            });
+            if (_keyboardHookID != IntPtr.Zero)
+            {
+                UnhookWindowsHookEx(_keyboardHookID);
+                _keyboardHookID = IntPtr.Zero;
+            }
         }
 
         private IntPtr SetMouseHook(LowLevelMouseProc proc)
@@ -65,8 +62,7 @@ namespace WarehouseAuto.Script
             using (Process curProcess = Process.GetCurrentProcess())
             using (ProcessModule curModule = curProcess.MainModule)
             {
-                return SetWindowsHookEx(WH_MOUSE_LL, proc,
-                    GetModuleHandle(curModule.ModuleName), 0);
+                return SetWindowsHookEx(WH_MOUSE_LL, proc, GetModuleHandle(curModule.ModuleName), 0);
             }
         }
 
@@ -75,8 +71,7 @@ namespace WarehouseAuto.Script
             using (Process curProcess = Process.GetCurrentProcess())
             using (ProcessModule curModule = curProcess.MainModule)
             {
-                return SetWindowsHookEx(WH_KEYBOARD_LL, proc,
-                    GetModuleHandle(curModule.ModuleName), 0);
+                return SetWindowsHookEx(WH_KEYBOARD_LL, proc, GetModuleHandle(curModule.ModuleName), 0);
             }
         }
 

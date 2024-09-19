@@ -119,7 +119,7 @@ namespace WarehouseAuto.Script
     {
         public string Name;
 
-        public List<string> EnterInvoices = new List<string>();
+        public List<ScanInfo> EnterInvoices = new List<ScanInfo>();
         public List<ScanInfo> HistoryInvoces = new List<ScanInfo>();
         public List<string> Consolidations = new List<string>();
 

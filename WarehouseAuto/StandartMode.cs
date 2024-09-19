@@ -119,8 +119,8 @@ namespace WarehouseAuto
             KeyboardHook KeyboardHook = new KeyboardHook();
             Hooks Hooks = new Hooks();
 
-            //keyboardHook.Init(this, Hooks);
-            //Hooks.Init(keyboardHook, this);
+            keyboardHook.Init(this, Hooks);
+            Hooks.Init(keyboardHook, this);
 
             TopMost = true;
 
@@ -132,7 +132,7 @@ namespace WarehouseAuto
 
             InitializeComponent();
 
-            if (ProgramInfo.COMPort == "" || ProgramInfo.COMPort == string.Empty)
+            if (ProgramInfo.COMPort == "" || ProgramInfo.COMPort == string.Empty || ProgramInfo.COMPort == null)
             {
                 ProgramInfo.COMPort = "COM3";
             }
@@ -149,6 +149,13 @@ namespace WarehouseAuto
         public void SaveData()
         {
             SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
+        }
+
+        public string GetTimeNow()
+        {
+            string timeFormat = DateTime.Now.ToString("HH:mm:ss");
+
+            return timeFormat;
         }
 
         private void StandartMode_Load(object sender, EventArgs e)
@@ -248,7 +255,7 @@ namespace WarehouseAuto
                 EnterInvoice.Items.Insert(0, text.Remove(text.Length - 1, 1));
             });
 
-            Datas[ContainerID].EnterInvoices.Insert(0, text.Remove(text.Length - 1, 1));
+            Datas[ContainerID].EnterInvoices.Insert(0, new ScanInfo(GetTimeNow(), text.Remove(text.Length - 1, 1)));
 
             if (Reaction.Checked)
             {
@@ -415,6 +422,10 @@ namespace WarehouseAuto
             else if(ImageFinder.Find(Resources.DeliveryWindow))
             {
                 ChangeStateText("Выдача на курьера");
+            }
+            else if (ImageFinder.Find(Resources.VidadtNaPeremeshenie))
+            {
+                ChangeStateText("ВыдатьНаПеремещение");
             }
             else if (ImageFinder.Find(Resources.RaskonsWindow))
             {
@@ -639,6 +650,28 @@ namespace WarehouseAuto
                 return;
             }
 
+            if (MStateText.Text == "ВыдатьНаПеремещение")
+            {
+                ImageFinder.ClickButton(Resources.InvoiceAdd);
+
+                if (ImageFinder.FindCount(30, 100, Resources.EnterGMXNumber))
+                {
+                    Paste(EnterInvoice.Items[EnterInvoice.Items.Count - 1].ToString(), 200);
+
+                    HistroyFirstAdd();
+                    LastInvoceRemove();
+                    SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
+
+                    search = false;
+
+                    return;
+                }
+
+                search = true;
+
+                return;
+            }
+
 
             if (MStateText.Text == "РасКонс")
             {
@@ -824,9 +857,9 @@ namespace WarehouseAuto
 
             HistoryInvoice.Invoke(action);
 
-            string timeFormat = DateTime.Now.ToString("HH:mm:ss");
+            //string timeFormat = DateTime.Now.ToString("HH:mm:ss");
 
-            Datas[ContainerID].HistoryInvoces.Insert(0, new ScanInfo(timeFormat, EnterInvoice.Items[EnterInvoice.Items.Count - 1].ToString()));
+            Datas[ContainerID].HistoryInvoces.Insert(0, Datas[ContainerID].EnterInvoices[Datas[ContainerID].EnterInvoices.Count-1]);
         }
 
         public void HistroyAdd(string text)
@@ -889,7 +922,7 @@ namespace WarehouseAuto
                 foreach (var invoice in invoices)
                 {
                     EnterInvoice.Items.Add(invoice);
-                    Datas[ContainerID].EnterInvoices.Add(invoice);
+                    Datas[ContainerID].EnterInvoices.Add(new ScanInfo(GetTimeNow(), invoice));
                 }
 
                 if (string.IsNullOrEmpty(EnterInvoice.Items[EnterInvoice.Items.Count - 1].ToString()))
@@ -980,7 +1013,7 @@ namespace WarehouseAuto
                 {
                     for (int i = selectedItems.Count - 1; i >= 0; i--)
                     {
-                        Datas[ContainerID].EnterInvoices.Remove(selectedItems[i].ToString());
+                        Datas[ContainerID].EnterInvoices.Remove(new ScanInfo(GetTimeNow(), selectedItems[i].ToString()));
                         EnterInvoice.Items.Remove(selectedItems[i]);
                     }
 
@@ -1047,7 +1080,7 @@ namespace WarehouseAuto
 
             ControlAList(e, HistoryInvoice);
 
-            DeleteList(e, HistoryInvoice);
+            //DeleteList(e, HistoryInvoice);
 
             SelectionCount.Text = HistoryInvoice.SelectedItems.Count.ToString();
         }
@@ -1180,7 +1213,7 @@ namespace WarehouseAuto
 
                 foreach (var data in Datas[ContainerID].EnterInvoices)
                 {
-                    EnterInvoice.Items.Add(data);
+                    EnterInvoice.Items.Add(data.Data);
                 }
 
                 foreach (var data in Datas[ContainerID].HistoryInvoces)

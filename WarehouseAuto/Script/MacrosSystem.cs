@@ -91,5 +91,10 @@ namespace WarehouseAuto.Script
             MouseEvent(MouseEventFlags.LeftDown);
             MouseEvent(MouseEventFlags.LeftUp);
         }
+
+        public static void MoveLeftClick(OpenCvSharp.Point point)
+        {
+            MoveLeftClick(point.X, point.Y);
+        }
     }
 }

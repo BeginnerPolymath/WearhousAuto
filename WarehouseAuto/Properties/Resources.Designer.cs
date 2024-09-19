@@ -243,6 +243,16 @@ namespace WarehouseAuto.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EnterGMXNumber {
+            get {
+                object obj = ResourceManager.GetObject("EnterGMXNumber", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EnterInvoceWindow {
             get {
                 object obj = ResourceManager.GetObject("EnterInvoceWindow", resourceCulture);
@@ -756,6 +766,16 @@ namespace WarehouseAuto.Properties {
         internal static System.Drawing.Bitmap VeryfastButton {
             get {
                 object obj = ResourceManager.GetObject("VeryfastButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VidadtNaPeremeshenie {
+            get {
+                object obj = ResourceManager.GetObject("VidadtNaPeremeshenie", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

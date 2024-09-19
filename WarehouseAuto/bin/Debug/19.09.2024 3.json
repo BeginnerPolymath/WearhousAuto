@@ -1,0 +1,547 @@
+[
+  {
+    "Name": "Основное",
+    "EnterInvoices": [],
+    "HistoryInvoces": [
+      {
+        "Time": "11:25:03",
+        "Data": "#PC#497-AA-93749607"
+      },
+      {
+        "Time": "11:25:02",
+        "Data": "#PC#497-AA-93749607"
+      },
+      {
+        "Time": "11:25:01",
+        "Data": "#PC#497-AA-93749607"
+      },
+      {
+        "Time": "11:24:59",
+        "Data": "#PC#497-AA-93749607"
+      },
+      {
+        "Time": "11:24:55",
+        "Data": "#PC#497-AA-93749607"
+      },
+      {
+        "Time": "11:24:53",
+        "Data": "#PC#497-AA-93749607"
+      },
+      {
+        "Time": "11:24:51",
+        "Data": "#PC#497-AA-93749607"
+      },
+      {
+        "Time": "11:22:21",
+        "Data": "#PC#497-AA-93749607"
+      },
+      {
+        "Time": "11:21:17",
+        "Data": "#PC#497-AA-93749607"
+      },
+      {
+        "Time": "11:21:09",
+        "Data": "#PC#497-AA-93749607"
+      },
+      {
+        "Time": "11:15:27",
+        "Data": "497-1600007-0271067"
+      },
+      {
+        "Time": "11:15:25",
+        "Data": "#PC#497-AA-93267750"
+      },
+      {
+        "Time": "11:15:16",
+        "Data": "#PC#497-AA-93267750"
+      },
+      {
+        "Time": "11:15:13",
+        "Data": "497-1600007-0271067"
+      },
+      {
+        "Time": "11:15:04",
+        "Data": "497-1600007-0271067"
+      },
+      {
+        "Time": "11:15:02",
+        "Data": "#PC#497-AA-93267750"
+      },
+      {
+        "Time": "11:08:40",
+        "Data": "15195905820"
+      },
+      {
+        "Time": "11:08:35",
+        "Data": "15195873853"
+      },
+      {
+        "Time": "11:08:31",
+        "Data": "15195520023"
+      },
+      {
+        "Time": "11:07:50",
+        "Data": "15195510026"
+      },
+      {
+        "Time": "11:07:47",
+        "Data": "15196045393"
+      },
+      {
+        "Time": "11:07:43",
+        "Data": "15195489971"
+      },
+      {
+        "Time": "11:07:40",
+        "Data": "15193601892"
+      },
+      {
+        "Time": "11:06:13",
+        "Data": "15186841536"
+      },
+      {
+        "Time": "11:06:08",
+        "Data": "15192369356"
+      },
+      {
+        "Time": "11:06:04",
+        "Data": "15189956235"
+      },
+      {
+        "Time": "11:06:00",
+        "Data": "15190021838"
+      },
+      {
+        "Time": "11:05:54",
+        "Data": "15187241057"
+      },
+      {
+        "Time": "11:05:50",
+        "Data": "15183270417"
+      },
+      {
+        "Time": "11:05:46",
+        "Data": "15173917794"
+      },
+      {
+        "Time": "11:05:43",
+        "Data": "15190922645"
+      },
+      {
+        "Time": "11:05:39",
+        "Data": "15190928406"
+      },
+      {
+        "Time": "10:55:26",
+        "Data": "15196076034"
+      },
+      {
+        "Time": "10:55:22",
+        "Data": "15195500013"
+      },
+      {
+        "Time": "10:55:18",
+        "Data": "15196470429"
+      },
+      {
+        "Time": "10:55:14",
+        "Data": "15195490130"
+      },
+      {
+        "Time": "10:55:10",
+        "Data": "15193700970"
+      },
+      {
+        "Time": "10:55:07",
+        "Data": "15194592979"
+      },
+      {
+        "Time": "10:55:03",
+        "Data": "15193480819"
+      },
+      {
+        "Time": "10:54:59",
+        "Data": "15195997733"
+      },
+      {
+        "Time": "10:54:55",
+        "Data": "15192660116"
+      },
+      {
+        "Time": "10:54:51",
+        "Data": "15196256070"
+      },
+      {
+        "Time": "10:54:47",
+        "Data": "15193368923"
+      },
+      {
+        "Time": "10:54:43",
+        "Data": "15194803460"
+      },
+      {
+        "Time": "10:54:39",
+        "Data": "15192477820"
+      },
+      {
+        "Time": "10:54:34",
+        "Data": "15195727195"
+      },
+      {
+        "Time": "10:54:30",
+        "Data": "15196117040"
+      },
+      {
+        "Time": "10:54:26",
+        "Data": "15196389316"
+      },
+      {
+        "Time": "10:54:23",
+        "Data": "15195509924"
+      },
+      {
+        "Time": "10:54:19",
+        "Data": "15192369784"
+      },
+      {
+        "Time": "10:54:15",
+        "Data": "15193819558"
+      },
+      {
+        "Time": "10:54:11",
+        "Data": "15192478871"
+      },
+      {
+        "Time": "10:54:08",
+        "Data": "15194381352"
+      },
+      {
+        "Time": "10:54:04",
+        "Data": "15195825777"
+      },
+      {
+        "Time": "10:54:01",
+        "Data": "15195510032"
+      },
+      {
+        "Time": "10:53:57",
+        "Data": "15194135321"
+      },
+      {
+        "Time": "10:53:54",
+        "Data": "15196198246"
+      },
+      {
+        "Time": "10:53:49",
+        "Data": "15196008223"
+      }
+    ],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Москва местами",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Складочная",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дубровка",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Томилино",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Сверхсрочки",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "БИО",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Москва ЕЛИ местами",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Складочная ЕЛИ",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дубровка ЕЛИ",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Томилино ЕЛИ",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Хабаровск местами",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Хабаровск мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Южный местами",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Южный мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Камчатка местами",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Камчатка мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Артем места",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Артем мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Флагман",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Флагман мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Арсеньев",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Спасск",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Лесозаводск",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дальнереченск",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дальнегорск",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Москва АМО-ПРЕСС паллет",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Москва АМО-ПРЕСС мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Южный ДВ ТЭК паллет",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Южный ДВ ТЭК мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Камчатка ДВ ТЭК паллет",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Камчатка ДВ ТЭК мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Магадан ДВ ТЭК паллет",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Магадан ДВ ТЭК мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дополнительно 1",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дополнительно 2",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дополнительно 3",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дополнительно 4",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дополнительно 5",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  }
+]

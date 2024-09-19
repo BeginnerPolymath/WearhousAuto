@@ -46,11 +46,6 @@ namespace WarehouseAuto
                     var result = FindImageOnScreen(screenCapture, buttonImage);
                     if (result != null)
                     {
-                        //MessageBox.Show("X: " + result.Value.X + " Y: " + result.Value.Y);
-                        // Click on the center of the found image
-                        //int clickX = result.Value.X + buttonImage.Width / 2;
-                        //int clickY = result.Value.Y + buttonImage.Height / 2;
-
                         int clickX = (int)(result.Value.X / SizeCoef) + buttonImage.Width / 2;
                         int clickY = (int)(result.Value.Y / SizeCoef) + buttonImage.Height / 2;
 
@@ -59,6 +54,34 @@ namespace WarehouseAuto
                     else
                     {
                         Console.WriteLine("Button not found.");
+                    }
+                }
+            }
+        }
+
+        public static OpenCvSharp.Point GetImagePosition(Bitmap bitmap)
+        {
+            using (var screenCapture = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height))
+            {
+                using (var g = Graphics.FromImage(screenCapture))
+                {
+                    g.CopyFromScreen(0, 0, 0, 0, screenCapture.Size);
+                }
+
+                using (var buttonImage = new Bitmap(bitmap))
+                {
+                    var result = FindImageOnScreen(screenCapture, buttonImage);
+                    if (result != null)
+                    {
+                        int clickX = (int)(result.Value.X / SizeCoef) + buttonImage.Width / 2;
+                        int clickY = (int)(result.Value.Y / SizeCoef) + buttonImage.Height / 2;
+
+                        return new OpenCvSharp.Point(clickX, clickY);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Iamge not found.");
+                        return new OpenCvSharp.Point(0, 0);
                     }
                 }
             }
