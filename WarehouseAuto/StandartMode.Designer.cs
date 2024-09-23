@@ -534,7 +534,7 @@
         private System.Windows.Forms.Label SelectionCount;
         private System.Windows.Forms.Label MStateText;
         private System.Windows.Forms.CheckBox AutoMark;
-        private System.Windows.Forms.ListBox ConsoList;
+        public System.Windows.Forms.ListBox ConsoList;
         private System.Windows.Forms.Button AddConsolidations;
         private System.Windows.Forms.Button ButtonsPanel;
         private System.Windows.Forms.Label ConsolidationCount;

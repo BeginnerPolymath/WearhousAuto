@@ -132,6 +132,9 @@ namespace WarehouseAuto
 
             SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
 
+            Console.WriteLine(ProgramInfo.Password);
+            Console.WriteLine(ProgramInfo.COMPort);
+
             InitializeComponent();
 
             if (ProgramInfo.COMPort == "" || ProgramInfo.COMPort == string.Empty || ProgramInfo.COMPort == null)
@@ -662,6 +665,8 @@ namespace WarehouseAuto
                     LastInvoceRemove();
                     SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
 
+                    Thread.Sleep(500);
+
                     search = false;
 
                     return;
@@ -677,62 +682,26 @@ namespace WarehouseAuto
             {
                 ImageFinder.ClickButton(Resources.EnterInvoice);
 
-                Paste(EnterInvoice.Items[EnterInvoice.Items.Count - 1].ToString(), 300);
-
-                HistroyFirstAdd();
-                LastInvoceRemove();
-                SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
-
-                //if (ImageFinder.UnFindCount(30, 100, Resources.EnterInvoice))
-                //{
-                //    MessageBox.Show("aha");
-                //}
-
-                Thread.Sleep(200);
-
-                SendKeys.SendWait("+{Tab}");
-
-                Paste("123", enter: false);
-
-                if (ImageFinder.FindCount(30, 100, Resources.Checkkek))
-                {
-                    SendKeys.SendWait("^{Backspace}");
-
-                    Thread.Sleep(200);
-
-                    if (ImageFinder.FindCount(30, 100, Resources.EnterInvoice))
-                    {
-                        search = false;
-
-                        return;
-                    }
-                }
-
-                search = true;
-
-                return;
-
-
-                ImageFinder.ClickButton(Resources.EnterInvoice);
-
                 Paste(EnterInvoice.Items[EnterInvoice.Items.Count - 1].ToString());
 
                 HistroyFirstAdd();
                 LastInvoceRemove();
                 SaveManager.SaveDataToFile(SavePath, ref Datas, ref ProgramInfo);
 
-                Thread.Sleep(300);
+                Thread.Sleep(700);
 
-                if (!ImageFinder.FindCount(20, 100, Resources.EnterInvoice))
+                SendKeys.SendWait("{Tab}");
+
+                Thread.Sleep(500);
+
+                if (ImageFinder.FindCount(30, 100, Resources.RasConsCheck))
                 {
-                    MessageBox.Show("Ошибка");
-
-                    search = true;
+                    search = false;
 
                     return;
                 }
 
-                search = false;
+                search = true;
 
                 return;
             }
@@ -1073,6 +1042,11 @@ namespace WarehouseAuto
 
             ControlAList(e, ConsoList);
 
+            UpdateCosolidationCountText();
+        }
+
+        public void UpdateCosolidationCountText()
+        {
             ConsolidationCount.Text = ConsoList.Items.Count.ToString();
         }
 
@@ -1275,23 +1249,23 @@ namespace WarehouseAuto
 
             else if (ContainerName == "Арсеньев")
             {
-                CreateCons("Раков Игорь", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
+                CreateCons("Раков Игорь", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "", energy: true);
             }
             else if (ContainerName == "Спасск")
             {
-                CreateCons("Герасимов Геннадий", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
+                CreateCons("Герасимов Геннадий", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "", energy: true);
             }
             else if (ContainerName == "Лесозаводск")
             {
-                CreateCons("Маргач", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
+                CreateCons("Маргач", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "", energy: true);
             }
             else if (ContainerName == "Дальнереченск")
             {
-                CreateCons("Синяйкин", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
+                CreateCons("Синяйкин", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "", energy: true);
             }
             else if (ContainerName == "Дальнегорск")
             {
-                CreateCons("Кошуков", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "");
+                CreateCons("Кошуков", "ТК ЭНЕРГИЯ (Владивосток)", "Авто", "Владивосток", "", energy: true);
             }
         }
 
@@ -1348,7 +1322,7 @@ namespace WarehouseAuto
             return false;
         }
 
-        void CreateCons(string giver, string transporter, string mode, string point, string point2, string comment = "")
+        void CreateCons(string giver, string transporter, string mode, string point, string point2, string comment = "", bool energy = false)
         {
             LanguageSwitcher.SetEnglish();
 
@@ -1386,7 +1360,8 @@ namespace WarehouseAuto
 
                 Thread.Sleep(500);
 
-                SendKeys.SendWait("{Tab 1}");
+                if(!energy)
+                    SendKeys.SendWait("{Tab 1}");
 
                 Thread.Sleep(500);
 

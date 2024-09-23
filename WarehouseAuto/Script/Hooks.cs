@@ -42,6 +42,18 @@ namespace WarehouseAuto.Script
             popup.Show();
         }
 
+        public void CopyConsolidation ()
+        {
+            Thread.Sleep(100);
+
+            SendKeys.SendWait("^{c}");
+
+            Thread.Sleep(800);
+
+            StandartMode.ConsoList.Items.Add(Clipboard.GetText());
+            StandartMode.UpdateCosolidationCountText();
+        }
+
         void UpdatePassword(object sender, EventArgs e)
         {
             StandartMode.ProgramInfo.Password = msk.Text;
@@ -59,14 +71,19 @@ namespace WarehouseAuto.Script
             {
                 ImageFinder.ClickButton(Resources.RDPPassword);
 
-                foreach (var _char in StandartMode.ProgramInfo.Password)
+                for (global::System.Int32 i = 0; i < StandartMode.ProgramInfo.Password.Length; i++)
+                {
+                    SendWaitDelay("{" + $"{StandartMode.ProgramInfo.Password[i]}" + "}", 1, 50);
+                }
+
+                /*foreach (var _char in StandartMode.ProgramInfo.Password)
                 {
                     SendWaitDelay("{" + $"{_char}" + "}", 1, 50);
-                }
+                }*/
 
                 SendWaitDelay("{Enter}", 1, 50);
 
-                if (ImageFinder.FindCount(20, 1000, Resources._1CStartWindow))
+                if (ImageFinder.FindCount(30, 1000, Resources._1CStartWindow))
                 {
                     SendWaitDelay("{Enter}", 1, 50);
                 }

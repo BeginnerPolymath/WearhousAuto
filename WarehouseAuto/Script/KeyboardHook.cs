@@ -26,6 +26,7 @@ namespace WarehouseAuto.Script
         private const Keys F12 = Keys.F12;
         private const Keys F11 = Keys.F11;
         private const Keys F1 = Keys.F1;
+        private const Keys F3 = Keys.F3;
 
 
         private LowLevelMouseProc _mouseProc;
@@ -40,8 +41,8 @@ namespace WarehouseAuto.Script
             _keyboardProc = KeyboardHookCallback;
             _keyboardHookID = SetKeyboardHook(_keyboardProc);
 
-            _mouseProc = MouseHookCallback;
-            _mouseHookID = SetMouseHook(_mouseProc);
+            //_mouseProc = MouseHookCallback;
+            //_mouseHookID = SetMouseHook(_mouseProc);
 
             //_mainThread = new Thread(new ThreadStart(MainLoop));
             //_mainThread.Start();
@@ -130,6 +131,10 @@ namespace WarehouseAuto.Script
                 else if ((Keys)vkCode == F1)
                 {
                     Hooks.WritePassword();
+                }
+                else if ((Keys)vkCode == F3)
+                {
+                    Hooks.CopyConsolidation();
                 }
             }
             return CallNextHookEx(_keyboardHookID, nCode, wParam, lParam);
