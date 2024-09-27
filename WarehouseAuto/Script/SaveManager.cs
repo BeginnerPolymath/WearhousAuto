@@ -11,11 +11,11 @@ namespace WarehouseAuto.Script
 {
     internal class SaveManager
     {
-
-        public static void SaveDataToFile(string savePath, ref List<Data> datas, ref ProgramInfo programInfo)
+        
+        public static void SaveDataToFile(string savePath, ref List<Data> datas, ref ProgramInfo programInfo, string dataTime)
         {
-            string timestamp = DateTime.Now.ToString("dd.MM.yyyy");
-            string fileName = $"{timestamp}.json";
+            
+            string fileName = $"{dataTime}.json";
 
             // Преобразуем объект в JSON
             string json = JsonConvert.SerializeObject(datas, Newtonsoft.Json.Formatting.Indented);
@@ -26,10 +26,11 @@ namespace WarehouseAuto.Script
             File.WriteAllText(savePath + "/" + "programInfo.json", json2);
         }
 
-        public static void LoadDataFromFile(string savePath, ref List<Data> data, ref ProgramInfo programInfo)
+        public static void LoadDataFromFile(string savePath, ref List<Data> data, ref ProgramInfo programInfo, string dataTime)
         {
-            string timestamp = DateTime.Now.ToString("dd.MM.yyyy");
-            string fileName = $"{timestamp}.json";
+            string fileName = $"{dataTime}.json";
+
+            Console.WriteLine(fileName);
 
             if (File.Exists(savePath + "/programInfo.json"))
             {

@@ -713,6 +713,26 @@ namespace WarehouseAuto.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SetBarCode {
+            get {
+                object obj = ResourceManager.GetObject("SetBarCode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SetRabotnik {
+            get {
+                object obj = ResourceManager.GetObject("SetRabotnik", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SlowButton {
             get {
                 object obj = ResourceManager.GetObject("SlowButton", resourceCulture);
@@ -786,6 +806,16 @@ namespace WarehouseAuto.Properties {
         internal static System.Drawing.Bitmap VidadtNaPeremeshenie {
             get {
                 object obj = ResourceManager.GetObject("VidadtNaPeremeshenie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VipolnitPoisk {
+            get {
+                object obj = ResourceManager.GetObject("VipolnitPoisk", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

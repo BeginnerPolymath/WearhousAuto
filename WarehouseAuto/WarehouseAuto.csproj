@@ -194,6 +194,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".nuget\mouse-keyboard-hook-logo.png" />
+    <None Include="Resources\SetBarCode.png" />
+    <None Include="Resources\SetRabotnik.png" />
+    <None Include="Resources\VipolnitPoisk.png" />
     <None Include="Resources\Kontragents.png" />
     <None Include="Resources\EnterGMXNumber.png" />
     <None Include="Resources\VidadtNaPeremeshenie.png" />

@@ -310,6 +310,12 @@
   <data name="SendModeEnter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SendModeEnter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="SetBarCode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SetBarCode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SetRabotnik" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SetRabotnik.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SlowButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SlowButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -333,6 +339,9 @@
   </data>
   <data name="VidadtNaPeremeshenie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VidadtNaPeremeshenie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VipolnitPoisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VipolnitPoisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_1CStartWindow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1CStartWindow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
