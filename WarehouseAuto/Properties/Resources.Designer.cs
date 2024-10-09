@@ -163,6 +163,16 @@ namespace WarehouseAuto.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DaButton {
+            get {
+                object obj = ResourceManager.GetObject("DaButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DeliveryWindow {
             get {
                 object obj = ResourceManager.GetObject("DeliveryWindow", resourceCulture);
@@ -583,6 +593,26 @@ namespace WarehouseAuto.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PrintStickerButton {
+            get {
+                object obj = ResourceManager.GetObject("PrintStickerButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RasConsButton {
+            get {
+                object obj = ResourceManager.GetObject("RasConsButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RasConsCheck {
             get {
                 object obj = ResourceManager.GetObject("RasConsCheck", resourceCulture);
@@ -626,6 +656,26 @@ namespace WarehouseAuto.Properties {
         internal static System.Drawing.Bitmap Screenshot_2024_07_13_150043 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2024_07_13_150043", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SealButton {
+            get {
+                object obj = ResourceManager.GetObject("SealButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SealEnter {
+            get {
+                object obj = ResourceManager.GetObject("SealEnter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

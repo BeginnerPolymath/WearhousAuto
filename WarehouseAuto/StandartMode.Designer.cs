@@ -31,6 +31,7 @@
             this.EnterInvoice = new System.Windows.Forms.ListBox();
             this.HistoryInvoice = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.PrintMeshok = new System.Windows.Forms.Button();
             this.AutoMark = new System.Windows.Forms.CheckBox();
             this.EmulateCheckBox = new System.Windows.Forms.CheckBox();
             this.InvoceCountText = new System.Windows.Forms.Label();
@@ -59,6 +60,8 @@
             this.GTMField = new System.Windows.Forms.MaskedTextBox();
             this.SealField = new System.Windows.Forms.MaskedTextBox();
             this.AutoOpenGMX = new System.Windows.Forms.Button();
+            this.OpenCVToggle = new System.Windows.Forms.CheckBox();
+            this.SetSealButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.containerIDUpDown)).BeginInit();
@@ -92,6 +95,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.SetSealButton);
+            this.panel1.Controls.Add(this.PrintMeshok);
             this.panel1.Controls.Add(this.AutoMark);
             this.panel1.Controls.Add(this.EmulateCheckBox);
             this.panel1.Controls.Add(this.InvoceCountText);
@@ -102,6 +107,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(255, 62);
             this.panel1.TabIndex = 2;
+            // 
+            // PrintMeshok
+            // 
+            this.PrintMeshok.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PrintMeshok.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PrintMeshok.Location = new System.Drawing.Point(227, 5);
+            this.PrintMeshok.Name = "PrintMeshok";
+            this.PrintMeshok.Size = new System.Drawing.Size(22, 23);
+            this.PrintMeshok.TabIndex = 20;
+            this.PrintMeshok.Text = "М";
+            this.PrintMeshok.UseVisualStyleBackColor = true;
+            this.PrintMeshok.Click += new System.EventHandler(this.PrintMeshok_Click);
             // 
             // AutoMark
             // 
@@ -477,12 +494,39 @@
             this.AutoOpenGMX.UseVisualStyleBackColor = true;
             this.AutoOpenGMX.Click += new System.EventHandler(this.AutoOpenGMX_Click);
             // 
+            // OpenCVToggle
+            // 
+            this.OpenCVToggle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.OpenCVToggle.AutoSize = true;
+            this.OpenCVToggle.Checked = true;
+            this.OpenCVToggle.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.OpenCVToggle.Location = new System.Drawing.Point(1, 238);
+            this.OpenCVToggle.Name = "OpenCVToggle";
+            this.OpenCVToggle.Size = new System.Drawing.Size(66, 17);
+            this.OpenCVToggle.TabIndex = 21;
+            this.OpenCVToggle.Text = "OpenCV";
+            this.OpenCVToggle.UseVisualStyleBackColor = true;
+            this.OpenCVToggle.CheckedChanged += new System.EventHandler(this.OpenCVToggle_CheckedChanged);
+            // 
+            // SetSealButton
+            // 
+            this.SetSealButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.SetSealButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SetSealButton.Location = new System.Drawing.Point(227, 27);
+            this.SetSealButton.Name = "SetSealButton";
+            this.SetSealButton.Size = new System.Drawing.Size(22, 23);
+            this.SetSealButton.TabIndex = 21;
+            this.SetSealButton.Text = "S";
+            this.SetSealButton.UseVisualStyleBackColor = true;
+            this.SetSealButton.Click += new System.EventHandler(this.SetSealButton_Click);
+            // 
             // StandartMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(255, 483);
+            this.Controls.Add(this.OpenCVToggle);
             this.Controls.Add(this.AutoOpenGMX);
             this.Controls.Add(this.SealField);
             this.Controls.Add(this.GTMField);
@@ -549,5 +593,8 @@
         private System.Windows.Forms.MaskedTextBox GTMField;
         private System.Windows.Forms.MaskedTextBox SealField;
         private System.Windows.Forms.Button AutoOpenGMX;
+        private System.Windows.Forms.Button PrintMeshok;
+        private System.Windows.Forms.CheckBox OpenCVToggle;
+        private System.Windows.Forms.Button SetSealButton;
     }
 }

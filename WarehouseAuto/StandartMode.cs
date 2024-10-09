@@ -19,6 +19,7 @@ using System.Text;
 using System.Diagnostics;
 using WarehouseAuto.Script;
 using OpenCvSharp.XFeatures2D;
+using OpenCvSharp;
 
 namespace WarehouseAuto
 {
@@ -116,6 +117,8 @@ namespace WarehouseAuto
 
         public StandartMode()
         {
+            //Environment.SetEnvironmentVariable("OPENCV_OPENCL_RUNTIME", "disabled", EnvironmentVariableTarget.Process);
+
             DataTime = DateTime.Now.ToString("dd.MM.yyyy");
 
             Console.WriteLine(DataTime);
@@ -187,8 +190,8 @@ namespace WarehouseAuto
 
         private void StandartMode_Load(object sender, EventArgs e)
         {
-            Location = new Point(1600, 625);
-            Size = new Size(267, 454);
+            Location = new System.Drawing.Point(1600, 625);
+            Size = new System.Drawing.Size(267, 454);
 
             FieldsUpdate();
         }
@@ -446,7 +449,7 @@ namespace WarehouseAuto
         private void SetTimer()
         {
             // Create a timer with a two second interval.
-            aTimer = new System.Timers.Timer(2000);
+            aTimer = new System.Timers.Timer(5000);
             // Hook up the Elapsed event for the timer. 
             aTimer.Elapsed += SetState;
             aTimer.AutoReset = true;
@@ -455,43 +458,50 @@ namespace WarehouseAuto
 
         public void SetState(Object source, ElapsedEventArgs e)
         {
-            if (ImageFinder.Find(Resources.SmaovivozWindow))
+            if (!OpenCVToggle.Checked)
+            {
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+                return;
+            }
+
+            if (ImageFinder.Find(Resources.SmaovivozWindow) != null)
             {
                 ChangeStateText("Самовывоз");
             }
-            else if(ImageFinder.Find(Resources.DeliveryWindow))
+            else if(ImageFinder.Find(Resources.DeliveryWindow) != null)
             {
                 ChangeStateText("Выдача на курьера");
             }
-            else if (ImageFinder.Find(Resources.VidadtNaPeremeshenie))
+            else if (ImageFinder.Find(Resources.VidadtNaPeremeshenie) != null)
             {
                 ChangeStateText("ВыдатьНаПеремещение");
             }
-            else if (ImageFinder.Find(Resources.RaskonsWindow))
+            else if (ImageFinder.Find(Resources.RaskonsWindow) != null)
             {
                 ChangeStateText("РасКонс");
             }
-            else if (ImageFinder.Find(Resources.InvoiceListWindow))
+            else if (ImageFinder.Find(Resources.InvoiceListWindow) != null)
             {
                 ChangeStateText("Список накладных");
             }
-            else if (ImageFinder.Find(Resources.MarkButton))
+            else if (ImageFinder.Find(Resources.MarkButton) != null)
             {
                 ChangeStateText("МАРК окно");
             }
-            else if (ImageFinder.Find(Resources.Marking))
+            else if (ImageFinder.Find(Resources.Marking) != null)
             {
                 ChangeStateText("МАРК");
             }
-            else if (ImageFinder.Find(Resources.Consolidation))
+            else if (ImageFinder.Find(Resources.Consolidation) != null)
             {
                 ChangeStateText("КОНС");
             }
-            else if (ImageFinder.Find(Resources.Prihod))
+            else if (ImageFinder.Find(Resources.Prihod) != null)
             {
                 ChangeStateText("Приход");
             }
-            else if (ImageFinder.Find(Resources.Spisanie))
+            else if (ImageFinder.Find(Resources.Spisanie) != null)
             {
                 ChangeStateText("Списание");
             }
@@ -499,6 +509,9 @@ namespace WarehouseAuto
             {
                 ChangeStateText("Отсутствует");
             }
+
+            //GC.Collect();
+            //GC.WaitForPendingFinalizers();
         }
 
         public void ChangeStateText(string text)
@@ -786,32 +799,28 @@ namespace WarehouseAuto
                 SaveData();
 
                 Thread.Sleep(700);
-
                 SendKeys.SendWait("{Tab}");
-
                 Thread.Sleep(500);
 
                 if (ImageFinder.FindCount(30, 100, Resources.RasConsCheck))
                 {
                     search = false;
-
                     return;
                 }
 
                 search = true;
-
                 return;
             }
 
             //Отмена если маркировка открыта
-            if (WaitForPixelColor.GetColorAt(new Point(1170, 258)) == Color.FromArgb(255, 204, 204, 204))
+            if (WaitForPixelColor.GetColorAt(new System.Drawing.Point(1170, 258)) == Color.FromArgb(255, 204, 204, 204))
             {
                 SetPause();
                 return;
             }
 
             //Поиск накладных
-            if (WaitForPixelColor.GetColorAt(new Point(1342, 87)) == Color.FromArgb(255, 204, 204, 204))
+            if (WaitForPixelColor.GetColorAt(new System.Drawing.Point(1342, 87)) == Color.FromArgb(255, 204, 204, 204))
             {
                 //Нажимаем на кнопку накладной
                 MacrosSystem.MoveLeftClick(454, 112);
@@ -833,7 +842,7 @@ namespace WarehouseAuto
                 SendKeys.SendWait("{Enter}");
 
                 //Ожидание когда откроется окно
-                WaitForPixelColor.PollPixel(new Point(1342, 87), Color.FromArgb(255, 178, 178, 178), ref AutoAddPause);
+                WaitForPixelColor.PollPixel(new System.Drawing.Point(1342, 87), Color.FromArgb(255, 178, 178, 178), ref AutoAddPause);
                 if (AutoAddPause) return;
 
                 LanguageSwitcher.SetEnglish();
@@ -861,14 +870,14 @@ namespace WarehouseAuto
             MacrosSystem.MoveLeftClick(1720, 155);
 
             //Ожидаем появления окна с выбором типа добавления
-            WaitForPixelColor.PollPixel(new Point(1392, 12), Color.FromArgb(255, 205, 205, 205), ref AutoAddPause);
+            WaitForPixelColor.PollPixel(new System.Drawing.Point(1392, 12), Color.FromArgb(255, 205, 205, 205), ref AutoAddPause);
             if (AutoAddPause) return;
 
 
             Thread.Sleep(200);
 
             //Определяем мешок это или накладная/гмх
-            if (WaitForPixelColor.GetColorAt(new Point(913, 443)) == Color.FromArgb(255, 65, 48, 3))
+            if (WaitForPixelColor.GetColorAt(new System.Drawing.Point(913, 443)) == Color.FromArgb(255, 65, 48, 3))
             {
                 if (EnterInvoice.Items[0].ToString().Contains("#F#"))
                 {
@@ -880,16 +889,16 @@ namespace WarehouseAuto
                 }
             }
             
-            if (WaitForPixelColor.GetColorAt(new Point(1706, 460)) != Color.FromArgb(255, 6, 6, 6))
+            if (WaitForPixelColor.GetColorAt(new System.Drawing.Point(1706, 460)) != Color.FromArgb(255, 6, 6, 6))
             {
                 Thread.Sleep(100);
 
                 MacrosSystem.MoveLeftClick(1054, 650);
 
-                WaitForPixelColor.PollPixel(new Point(1039, 405), Color.FromArgb(255, 178, 178, 178), ref AutoAddPause);
+                WaitForPixelColor.PollPixel(new System.Drawing.Point(1039, 405), Color.FromArgb(255, 178, 178, 178), ref AutoAddPause);
                 if (AutoAddPause) return;
             }
-            else if (WaitForPixelColor.GetColorAt(new Point(1706, 460)) == Color.FromArgb(255, 6, 6, 6))
+            else if (WaitForPixelColor.GetColorAt(new System.Drawing.Point(1706, 460)) == Color.FromArgb(255, 6, 6, 6))
             {
                 //MessageBox.Show("Маркировка!");
             }
@@ -910,7 +919,7 @@ namespace WarehouseAuto
             LastInvoceRemove();
             SaveData();
 
-            WaitForPixelColor.PollPixel(new Point(1364, 9), Color.FromArgb(255, 158, 158, 158), ref AutoAddPause);
+            WaitForPixelColor.PollPixel(new System.Drawing.Point(1364, 9), Color.FromArgb(255, 158, 158, 158), ref AutoAddPause);
         }
 
         public void HistroyFirstAdd()
@@ -960,12 +969,12 @@ namespace WarehouseAuto
 
             if (e.KeyCode.ToString() == "Down")
             {
-                Color color = WaitForPixelColor.GetColorAt(new Point(MacrosSystem.GetCursorPosition().X, MacrosSystem.GetCursorPosition().Y));
+                Color color = WaitForPixelColor.GetColorAt(new System.Drawing.Point(MacrosSystem.GetCursorPosition().X, MacrosSystem.GetCursorPosition().Y));
 
                 string a = MacrosSystem.GetCursorPosition().X + ", " + MacrosSystem.GetCursorPosition().Y;
 
-                MessageBox.Show(a + " Color: " + WaitForPixelColor.GetColorAt(new Point(MacrosSystem.GetCursorPosition().X, MacrosSystem.GetCursorPosition().Y)));
-                Clipboard.SetText($"{MacrosSystem.GetCursorPosition().X} {MacrosSystem.GetCursorPosition().Y} {WaitForPixelColor.GetColorAt(new Point(MacrosSystem.GetCursorPosition().X, MacrosSystem.GetCursorPosition().Y))}");
+                MessageBox.Show(a + " Color: " + WaitForPixelColor.GetColorAt(new System.Drawing.Point(MacrosSystem.GetCursorPosition().X, MacrosSystem.GetCursorPosition().Y)));
+                Clipboard.SetText($"{MacrosSystem.GetCursorPosition().X} {MacrosSystem.GetCursorPosition().Y} {WaitForPixelColor.GetColorAt(new System.Drawing.Point(MacrosSystem.GetCursorPosition().X, MacrosSystem.GetCursorPosition().Y))}");
 
                 Clipboard.SetText($"WaitForPixelColor.PollPixel(new Point({a}), Color.FromArgb({color.A}, {color.R}, {color.G}, {color.B}));");
             }
@@ -1256,11 +1265,11 @@ namespace WarehouseAuto
         {
             if (ButtonsPanelOpen)
             {
-                Size = new Size(267, 454);
+                Size = new System.Drawing.Size(267, 454);
             }
             else
             {
-                Size = new Size(467, 454);
+                Size = new System.Drawing.Size(467, 454);
             }
 
             ButtonsPanelOpen = !ButtonsPanelOpen;
@@ -1522,7 +1531,7 @@ namespace WarehouseAuto
 
             Thread.Sleep(200);
 
-            if (ImageFinder.Find(Resources.NumberAutoTransfer))
+            if (ImageFinder.Find(Resources.NumberAutoTransfer) != null)
             {
                 ImageFinder.ClickButton(Resources.NumberAutoTransfer);
 
@@ -1766,6 +1775,90 @@ namespace WarehouseAuto
         {
 
         }
+
+        private async void PrintMeshok_Click(object sender, EventArgs e)
+        {
+            if (SealField.TextLength == 0)
+                return;
+
+            Clipboard.SetText(SealField.Text);
+
+            await SetSealAndMark();
+
+        }
+
+        public async Task SetSealAndMark()
+        {
+            var checker = await SetSeal();
+
+            if (!checker) return;
+
+            checker = await ImageFinder.FindAndClickAsync(2000, Resources.PrintStickerButton, point =>
+            {
+                ImageFinder.ClickButton(point);
+                
+            }, 500);
+
+            await Task.Delay(3000);
+
+            if (!checker) return;
+
+            checker = await ImageFinder.FindAndClickAsync(2000, Resources.SealButton, point =>
+            {
+                ImageFinder.ClickButton(point);
+            }, 500);
+
+            if (!checker) return;
+
+            await Task.Delay(500);
+
+            SendKeys.SendWait("{Enter}");
+        }
+
+        private async void SetSealButton_Click(object sender, EventArgs e)
+        {
+            if (SealField.TextLength == 0)
+                return;
+
+            Clipboard.SetText(SealField.Text);
+
+            await SetSeal();
+        }
+
+        public async Task<bool> SetSeal()
+        {
+            var checker = await ImageFinder.FindAndClickAsync(2000, Resources.SealButton, point =>
+            {
+                ImageFinder.ClickButton(point);
+            }, 500);
+
+            if (!checker) return checker;
+
+            checker = await ImageFinder.FindAndClickAsync(2000, Resources.SealEnter, point =>
+            {
+                ImageFinder.ClickButton(point);
+
+                // Выполняем действие при нахождении
+                SendKeys.SendWait($"{PasteMode}");
+            }, 500);
+
+            if (!checker) return checker;
+
+            checker = await ImageFinder.FindAndClickAsync(2000, Resources.EndingButton, point =>
+            {
+                ImageFinder.ClickButton(point);
+
+            }, 500);
+
+            return checker;
+        }
+
+        private void OpenCVToggle_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+ 
     }
 
     

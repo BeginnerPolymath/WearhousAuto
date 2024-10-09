@@ -1,0 +1,314 @@
+[
+  {
+    "Name": "Основное",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Москва местами",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Складочная",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дубровка",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Томилино",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Сверхсрочки",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "БИО",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Москва ЕЛИ местами",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Складочная ЕЛИ",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дубровка ЕЛИ",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Томилино ЕЛИ",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Хабаровск местами",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Хабаровск мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Южный местами",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Южный мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Камчатка местами",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Камчатка мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Артем места",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Артем мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Флагман",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Флагман мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Арсеньев",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Спасск",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Лесозаводск",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дальнереченск",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дальнегорск",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Москва АМО-ПРЕСС паллет",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Москва АМО-ПРЕСС мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Южный ДВ ТЭК паллет",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Южный ДВ ТЭК мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Камчатка ДВ ТЭК паллет",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Камчатка ДВ ТЭК мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Магадан ДВ ТЭК паллет",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Магадан ДВ ТЭК мешок",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дополнительно 1",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дополнительно 2",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дополнительно 3",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дополнительно 4",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  },
+  {
+    "Name": "Дополнительно 5",
+    "EnterInvoices": [],
+    "HistoryInvoces": [],
+    "Consolidations": [],
+    "GMTNumber": null,
+    "SealNumber": null
+  }
+]

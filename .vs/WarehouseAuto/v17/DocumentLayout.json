@@ -3,38 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|c:\\users\\user\\documents\\github\\wearhousauto\\warehouseauto\\standartmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\standartmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\standartmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WarehouseAuto||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|c:\\users\\user\\documents\\github\\wearhousauto\\warehouseauto\\imagefinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\imagefinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\standartmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\standartmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Roaming\\WarehouseAuto\\27.09.2024.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\scannermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\scannermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\keyboardhook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\keyboardhook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WarehouseAuto||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\standartmode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\standartmode.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\imagefinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\imagefinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\scannermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\scannermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\keyboardhook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|solutionrelative:warehouseauto\\script\\keyboardhook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1D63A7B-7578-4B5B-823D-095C5F73ED09}|WarehouseAuto\\WarehouseAuto.csproj|C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\warehouseauto\\script\\hooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -52,24 +49,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "27.09.2024.json",
-              "DocumentMoniker": "C:\\Users\\User\\AppData\\Roaming\\WarehouseAuto\\27.09.2024.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\WarehouseAuto\\27.09.2024.json",
-              "ToolTip": "C:\\Users\\User\\AppData\\Roaming\\WarehouseAuto\\27.09.2024.json",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\WarehouseAuto\\27.09.2024.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUJAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-27T00:34:50.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "KeyboardHook.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\KeyboardHook.cs",
               "RelativeDocumentMoniker": "WarehouseAuto\\Script\\KeyboardHook.cs",
@@ -82,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Hooks.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\Hooks.cs",
               "RelativeDocumentMoniker": "WarehouseAuto\\Script\\Hooks.cs",
@@ -95,13 +79,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "ImageFinder.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\ImageFinder.cs",
               "RelativeDocumentMoniker": "WarehouseAuto\\ImageFinder.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\ImageFinder.cs",
               "RelativeToolTip": "WarehouseAuto\\ImageFinder.cs",
-              "ViewState": "AQIAAJwAAAAAAAAAAAAAwLUAAAARAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAYwD8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T00:59:27.017Z",
               "EditorCaption": ""
@@ -114,7 +98,7 @@
               "RelativeDocumentMoniker": "WarehouseAuto\\StandartMode.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\StandartMode.cs",
               "RelativeToolTip": "WarehouseAuto\\StandartMode.cs",
-              "ViewState": "AQIAAPoCAAAAAAAAAAAAAAoDAAANAAAA",
+              "ViewState": "AQIAAMQGAAAAAAAAAAAEwNYGAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-19T10:44:22.067Z",
               "EditorCaption": ""
@@ -146,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "SaveManager.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\Script\\SaveManager.cs",
               "RelativeDocumentMoniker": "WarehouseAuto\\Script\\SaveManager.cs",
@@ -159,20 +143,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "StandartMode.Designer.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\StandartMode.Designer.cs",
               "RelativeDocumentMoniker": "WarehouseAuto\\StandartMode.Designer.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\StandartMode.Designer.cs",
               "RelativeToolTip": "WarehouseAuto\\StandartMode.Designer.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAuwBEAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T00:06:24.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "WarehouseAuto",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\WearhousAuto\\WarehouseAuto\\WarehouseAuto.csproj",
               "RelativeDocumentMoniker": "WarehouseAuto\\WarehouseAuto.csproj",
